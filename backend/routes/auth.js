@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const
     Registration = require('../models/register.model');
 
-router.route('/').post((req, res) => {
+router.route('/login').post((req, res) => {
     const email = req.body.email;
     const user = Registration.findOne({
             email: req.body.email
@@ -16,9 +16,10 @@ router.route('/').post((req, res) => {
                     if (result) {
                         const token = jwt.sign({
                             _id: user._id
-                        }, process.env.JWTPRIVATEKEY, {
+                        }, "process.env.JWTPRIVATEKEY", {
                             expiresIn: '7d'
                         });
+                        console.log("Token:"+token);
                         res.cookie('nToken', token, {
                             maxAge: 3600000 * 24 * 7,
                             httpOnly: true
