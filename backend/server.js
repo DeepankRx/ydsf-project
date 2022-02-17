@@ -28,6 +28,7 @@ const registrationRouter = require('./routes/registration');
 const authRouter = require('./routes/auth');
 const newsletterRouter = require('./routes/newsletter');
 const adminRouter = require('./routes/admin');
+const quizRouter = require('./routes/quiz');
 
 const requireAdmin = function (req, res, next) {
     const authorization = req.cookies.nToken;
@@ -49,7 +50,7 @@ app.use('/registration', registrationRouter);
 app.use('/auth', authRouter);
 app.use('/newsletter', newsletterRouter);
 app.use('/admin', requireAdmin, adminRouter);
-
+app.use('/quiz',quizRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port : ${port}`)
