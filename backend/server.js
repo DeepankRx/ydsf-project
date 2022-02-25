@@ -30,7 +30,7 @@ const newsletterRouter = require('./routes/newsletter');
 const adminRouter = require('./routes/admin');
 const quizRouter = require('./routes/quiz');
 const mediaRouter = require('./routes/media');
-
+const activityRouter = require('./routes/activities');
 const requireAdmin = function (req, res, next) {
     const authorization = req.cookies.nToken;
     const decoded = jwt.verify(authorization, "process.env.JWTPRIVATEKEY");
@@ -47,6 +47,7 @@ const requireAdmin = function (req, res, next) {
     })
 }
 
+app.use('/activity', activityRouter);
 app.use('/registration', registrationRouter);
 app.use('/auth', authRouter);
 app.use('/newsletter', newsletterRouter);
