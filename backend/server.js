@@ -1,4 +1,6 @@
-require('dotenv').config();
+if(process.env.NODE_ENV !== 'production'){
+   require('dotenv').config();
+}   // If not in prodcution mode then require the DotEnv
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
