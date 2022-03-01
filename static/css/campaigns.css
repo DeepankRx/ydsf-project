@@ -1,0 +1,23 @@
+.body__Container {
+  display: flex;
+}
+.left {
+  margin-right: 20px;
+}
+.small {
+  margin: 0;
+  text-align: right;
+}
+
+.carousel {
+  height: 45vh;
+}
+.card-text {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .left {
+    display: none;
+  }
+}

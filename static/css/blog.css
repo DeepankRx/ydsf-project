@@ -1,0 +1,60 @@
+header{background-color: #203772; text-align: center;}
+footer a{color: #245c89;
+    text-decoration: none;}
+footer p{font-size: 12px;
+    color: #374957;
+    max-width: 560px;}
+.login1 h1{font-size: 18px;
+    color: #3D3D3D;
+    margin-bottom: 5px;
+    height: auto;
+} 
+.login1 p{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+}    
+.login1 a{background: #1D3A7C;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 14px;
+    text-decoration: none;} 
+.login1 a:hover{background-color:#07173b; color: #fff;text-decoration: none;}    
+.login2 p{font-size: 12px;
+    margin-bottom: 5px;
+    height: auto;
+}   
+ol{position: relative;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;}    
+li{display: block;
+    list-style-image: none;
+    list-style-type: none;
+    border: 1px solid rgba(95, 125, 149, 0.25);
+    border-radius: 4px;
+    box-sizing: border-box;margin: 5px;}
+li a{padding: 7px 6px;display: block;    color: #245c89;} 
+li a i{min-width: 42px;
+    height: 36px;
+    float: none;width: 32px;    display: block;}     
+.sms h2{font-size: 13px;
+    color: #455A64;
+    font-weight: 700; margin-left: 45px;}           
+.sms a{color: #245c89;
+    text-decoration: none;
+}   
+.sms img{display: block;
+    margin: 0 auto;
+    height: 40%;
+    margin-left: 25px;
+    max-width: calc(100% + 25px);} 

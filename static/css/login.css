@@ -1,0 +1,78 @@
+html {   
+    height: 100%;   
+}  
+body {   
+    height: 100%;   
+}  
+
+/* Navbar  */
+#azadi_logo, #mygov_logo{
+    width: 100px;
+}
+
+#india_flag{
+    width: 35px;
+}
+
+.navbar{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}   
+.container{ 
+    height:70px;
+    padding: 0 0 0 0;
+    width: 210px;
+
+}
+#navbar2{
+    height: 70px;
+}
+.navbar-custom {
+    background-color: rgb(39, 53, 116);
+}
+
+/* Login form starts */
+
+.global-container {    
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    background-color: #ffffff;  
+    margin-top: 0;
+}
+
+form {  
+    padding-top: 10px;  
+    font-size: 14px;  
+    margin-top: 30px;  
+}  
+
+.or{
+    text-align: center;
+}
+
+a{
+    color: rgb(63, 81, 158);;
+}
+.card-title {   
+font-weight: 300;  
+ }  
+.btn{  
+    font-size: 14px;  
+    margin-top: 20px; 
+    background-color: rgb(63, 81, 158);
+    color: #ffffff; 
+}  
+.login-form {   
+    width: 330px;  
+    margin: 20px;  
+}  
+.sign-up {  
+    text-align: center;  
+    padding: 20px 0 0;  
+}  
+.alert {  
+    margin-bottom: -30px;  
+    font-size: 13px;  
+    margin-top: 20px;  
+}  
