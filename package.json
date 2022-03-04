@@ -13,17 +13,14 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.4",
     "multer": "^1.4.4",
-    "pug": "^3.0.2",
-    "serve": "^13.0.2"
+    "pug": "^3.0.2"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "heroku-prebuild": "npm install -f",
+    "heroku-postbuild": "npm run prod"
   },
   "repository": {
     "type": "git",
