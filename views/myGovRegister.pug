@@ -52,10 +52,12 @@ section
           .container
             .w-75.text-center
               p Register with an Email ID or Mobile Number
-              form
+              form(action='/myGovRegister' method='post')
                 input.form-control(type='text' name='name' placeholder='Full Name')
                 br
-                input.form-control(type='text' name='name' placeholder='Email')
+                input.form-control(type='email' name='email' placeholder='Email')
+                br
+                input.form-control(type='password' name='password' placeholder='Password')
                 br
                 select.form-control(title='select' name='country')
                   option(value='India') India
@@ -63,7 +65,7 @@ section
                   option(value='China') China
                   option(value='Japan') Japan
                 br
-                input.form-control(type='text' name='name' placeholder='Mobile Number')
+                input.form-control(type='text' name='phone' placeholder='Mobile Number')
                 br
                 .row
                   .col
@@ -87,7 +89,7 @@ section
                       option(value='2021') 2021
                       option(value='2020') 2020
                     br
-                select.form-control(title='select' name='year')
+                select.form-control(title='select' name='gender')
                   option(value='Select Gender') Select Gender
                   option(value='Male') Male
                   option(value='Female') Female

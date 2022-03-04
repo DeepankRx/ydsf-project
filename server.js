@@ -1,6 +1,6 @@
-if(process.env.NODE_ENV !== 'production'){
-   require('dotenv').config();
-}   // If not in prodcution mode then require the DotEnv
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+} // If not in prodcution mode then require the DotEnv
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -62,37 +62,65 @@ app.use('/registration', registrationRouter);
 app.use('/auth', authRouter);
 app.use('/newsletter', newsletterRouter);
 app.use('/admin', requireAdmin, adminRouter);
-app.use('/quiz',quizRouter);
+app.use('/quiz', quizRouter);
 app.use('/media', mediaRouter);
 
-app.get('/',(req,res) => {
+app.get('/', (req, res) => {
     res.status(200).render('index');
 });
-app.get('/blog',(req,res) => {
+app.get('/blog', (req, res) => {
     res.status(200).render('blog');
 })
-app.get('/campaigns',(req,res) => {
+app.get('/campaigns', (req, res) => {
     res.status(200).render('campaigns');
 })
-app.get('/discuss',(req,res) => {
+app.get('/discuss', (req, res) => {
     res.status(200).render('discuss');
 })
-app.get('/groups',(req, res) => {
+app.get('/groups', (req, res) => {
     res.status(200).render('groups');
 })
-app.get('/login',(req, res) => {
+app.get('/login', (req, res) => {
     res.status(200).render('login');
 })
-app.get('/myGovRegister',(req, res)=>{
+app.get('/myGovRegister', (req, res) => {
     res.status(200).render('myGovRegister');
 })
-app.get('/podcast',(req, res)=>{
+app.get('/podcast', (req, res) => {
     res.status(200).render('podcast');
 })
-app.get('/poll',(req,res)=>{
+app.get('/poll', (req, res) => {
     res.status(200).render('poll');
 })
+app.post('/login', (req, res) => {
+    const email = req.body.email;
+    const password = req.body.password;
+    console.log(email, password);
+    axios.post('http://localhost:5000/auth/login', {
+        email: req.body.email,
+        password: req.body.password
+    }).then(response => {
+        console.log(response.data);
+        res.render('blog');
+    }).catch(err => {
+        console.log(err);
+    });
+})
+app.post('/myGovRegister', (req, res) => {
 
+    axios.post('http://localhost:5000/registration/add', {
+        fullName : req.body.name,
+        email : req.body.email,
+        password : req.body.password,
+        country : req.body.country,
+        phone : req.body.phone,
+        gender : req.body.gender,
+    }).then(response => {
+        console.log(response.data);
+    }).catch(err => {
+        console.log(err);
+    });
+})
 app.listen(port, () => {
     console.log(`Server is running on port : ${port}`)
 })

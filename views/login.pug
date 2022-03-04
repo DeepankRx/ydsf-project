@@ -28,7 +28,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-custom.navbar-inverse.navbar-static-t
       .card-body
         h3.card-title.text-center Log in to your Account
         .card-text
-          form
+          form(action='/login' method='post')
             .form-group
               label(for='exampleInputEmail1')  E-mail/Mobile
               input#exampleInputEmail1.form-control.form-control-sm(type='email' aria-describedby='emailHelp')
@@ -38,10 +38,10 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-custom.navbar-inverse.navbar-static-t
             br
             .form-group
               label(for='exampleInputEmail1')  E-mail/Mobile
-              input#exampleInputEmail1.form-control.form-control-sm(type='email' aria-describedby='emailHelp')
+              input#exampleInputEmail1.form-control.form-control-sm(type='email' name="email" aria-describedby='emailHelp')
             .form-group
               label(for='exampleInputPassword1')  Password 
-              input#exampleInputPassword1.form-control.form-control-sm(type='password')
+              input#exampleInputPassword1.form-control.form-control-sm(type='password' name="password")
             a(href='#' style='float:right;font-size:12px;')  Forgot your password? 
             button.btn.btn-block(type='submit')  Log in with Password 
             .sign-up

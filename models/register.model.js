@@ -11,7 +11,6 @@ const registrationSchema = new Schema({
     fullName: {
         type: String,
         required: [true, 'Full Name is required'],
-        unique: true,
     },
     password: {
         type: String,
@@ -30,7 +29,6 @@ const registrationSchema = new Schema({
     },
     dateOfBirth: {
         type: Date,
-        required: [true, 'Date of Birth is required'],
     },
     country: {
         type: String,
