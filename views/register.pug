@@ -1,0 +1,128 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title MyGov-Register
+  link(rel='stylesheet' type='text/css' href='css/index.css')
+  link(crossorigin='anonymous' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+header
+  img.img-fluid.p-2(title='img' src='images/logo (1).png')
+section.login1
+  .mt-4.text-center
+    h3 Create a MyGov Account
+    p.text-secondary
+      | Already have an Account? 
+      a(href='/login') Login
+section
+  .container
+    div
+      .row
+        .col-lg-6.col-sm-12
+          .w-75
+            .w-75.text-center
+              p Login with a Social Account
+              ol
+                li
+                  a(href='/')
+                    i.fa.fa-facebook-official
+                    | Facebook
+                li
+                  a(href='/')
+                    i.fa.fa-google
+                    | Google
+                li
+                  a(href='/')
+                    i.fa.fa-twitter
+                    | Twitter
+                li
+                  a(href='/')
+                    i.fa.fa-linkedin
+                    | LinkedIn
+                li
+                  a(href='/')
+                    i.fa.fa-github
+                    | Github
+          .sms
+            h2 Register with SMS
+            a(href='/')
+              img(title='img' src='images/register-sms.png')
+        .col-lg-6.col-sm-12
+          .container
+            .w-75.text-center
+              p Register with an Email ID or Mobile Number
+              form
+                input.form-control(type='text' name='name' placeholder='Full Name')
+                br
+                input.form-control(type='text' name='name' placeholder='Email')
+                br
+                select.form-control(title='select' name='country')
+                  option(value='India') India
+                  option(value='U.S.A') U.S.A
+                  option(value='China') China
+                  option(value='Japan') Japan
+                br
+                input.form-control(type='text' name='name' placeholder='Mobile Number')
+                br
+                .row
+                  .col
+                    select.form-control(title='select' name='date')
+                      option(value='--Date--') --Date--
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                    br
+                  .col
+                    select.form-control(title='select' name='month')
+                      option(value='--Month--') --Month--
+                      option(value='January') January
+                      option(value='February') February
+                      option(value='March') March
+                    br
+                  .col
+                    select.form-control(title='select' name='year')
+                      option(value='--Year--') --Year--
+                      option(value='2022') 2022
+                      option(value='2021') 2021
+                      option(value='2020') 2020
+                    br
+                select.form-control(title='select' name='year')
+                  option(value='Select Gender') Select Gender
+                  option(value='Male') Male
+                  option(value='Female') Female
+                  option(value='Other') Other
+                br
+                input.form-control.bg-info.text-light(type='submit' value='Create New Account' name='sub')
+section
+  .text-center.text-secondary.mt-2.login2
+    p
+      | Users having @gov.in or @nic.in can directly 
+      a(href='/login') Log In
+      br
+      | with their Email/Password.
+footer.mt-5
+  hr
+  .container
+    .footer
+      .row.text-center
+        a.col-lg-2.col-sm-12(href='/')
+          img.img-fluid(title='img' src='images/nic_logo.png')
+        p.col-lg-5.col-sm-12
+          | &copy;MyGov Auth platform is designed, developed and hosted by 
+          a(href='/') National Informatics Centre
+          |  and this website belongs to 
+          a(href='/') MyGov
+          | , 
+          a(href='/') Ministry of Electronics
+          |  &amp; 
+          a(href='/') Information Technology
+          | ,
+          a(href='/') Government of India
+          |  .
+          br
+          br
+          | auth-84 - Last Updated: 24/02/22
+script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')

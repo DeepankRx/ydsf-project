@@ -1,4 +1,4 @@
-doctype html
+doctype pug
 head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -20,7 +20,7 @@ head
 // Navbars
 // Navbar 1
 nav#navbar1.navbar.py-0.navbar-expand-lg.navbar-light.navbar-custom.navbar-inverse.navbar-fixed-top
-  a.navbar-brand(title='link' href='#')
+  a.navbar-brand(title='link' href='/')
     img#india_flag(alt='Government of India' src='images/india_flag.png')
     |             GOVERNMENT OF INDIA
   button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
@@ -28,31 +28,31 @@ nav#navbar1.navbar.py-0.navbar-expand-lg.navbar-light.navbar-custom.navbar-inver
   #navbarNav.collapse.navbar-collapse
     ul.navbar-nav.ms-auto
       li.nav-item.active
-        a.nav-link(title='link' href='#') Skip to main content
+        a.nav-link(title='link' href='/') Skip to main content
       li.nav-item
-        a.nav-link(title='link' href='#') &#x939;&#x93F;&#x928;&#x94D;&#x926;&#x940;
+        a.nav-link(title='link' href='/') &#x939;&#x93F;&#x928;&#x94D;&#x926;&#x940;
       li.nav-item
-        a.nav-link(title='link' href='#')
+        a.nav-link(title='link' href='/')
           i.fas.fa-wheelchair
       li.nav-item
-        a.nav-link(title='link' href='#')
+        a.nav-link(title='link' href='/')
           i.fab.fa-twitter
       li.nav-item
-        a.nav-link(title='link' href='#')
+        a.nav-link(title='link' href='/')
           i.fab.fa-facebook
       li.nav-item
-        a.nav-link(title='link' href='#')
+        a.nav-link(title='link' href='/')
           i.fab.fa-youtube
       li.nav-item
-        a.nav-link(title='link' href='#')
+        a.nav-link(title='link' href='/')
           i.fab.fa-instagram
       li.nav-item
-        a.nav-link.login(title='link' href='login.html') Login
+        a.nav-link.login(title='link' href='/login') Login
       li.nav-item
-        a.nav-link.register(title='link' href='#') Register
+        a.nav-link.register(title='link' href='/register') Register
 // Navbar 2
 nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-inverse.navbar-fixed-top
-  a.navbar-brand(title='link' href='#')
+  a.navbar-brand(title='link' href='/')
     img#mygov_logo(alt='mygov logo' src='images/mygov_logo.png')
     img#azadi_logo(alt='Azadi ka amrit mahotsav' src='images/azadi_img.png')
   button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
@@ -60,38 +60,38 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
   #navbarNav.collapse.navbar-collapse
     ul.navbar-nav.ms-auto
       li.nav-item.active
-        a.nav-link.nav-link2(title='link' href='index.html') Home
+        a.nav-link.nav-link2(title='link' href='index.pug') Home
       li.nav-item
-        a.nav-link(title='link' href='#') About
+        a.nav-link(title='link' href='/about') About
       // Dropdown
       li.nav-item.dropdown
-        a#navbarDropdownMenuLink.nav-link.dropdown-toggle(title='link' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+        a#navbarDropdownMenuLink.nav-link.dropdown-toggle(title='link' href='/' role='button' data-bs-toggle='dropdown' aria-expanded='false')
           | Activites
         ul.dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
           li
-            a.dropdown-item(title='link' href='groups.html') Groups
+            a.dropdown-item(title='link' href='/groups') Groups
           li
-            a.dropdown-item(title='link' href='do/do.html') Do
+            a.dropdown-item(title='link' href='/do') Do
           li
-            a.dropdown-item(title='link' href='discuss.html') Discuss
+            a.dropdown-item(title='link' href='/discuss') Discuss
           li
-            a.dropdown-item(title='link' href='#') Poll &amp; Survey
+            a.dropdown-item(title='link' href='/poll') Poll &amp; Survey
           li
-            a.dropdown-item(title='link' href='blog.html') Blog
+            a.dropdown-item(title='link' href='/blog') Blog
           li
-            a.dropdown-item(title='link' href='talk/Talk.html') Talk
+            a.dropdown-item(title='link' href='/Talk') Talk
           li
-            a.dropdown-item(title='link' href='campaigns.html') Campaigns
+            a.dropdown-item(title='link' href='/campaigns') Campaigns
           li
-            a.dropdown-item(title='link' href='#') Podcast
+            a.dropdown-item(title='link' href='/') Podcast
           li
-            a.dropdown-item(title='link' href='#') Wall of Fame
+            a.dropdown-item(title='link' href='/') Wall of Fame
       li.nav-item
-        a.nav-link(title='link' href='#') Contact
+        a.nav-link(title='link' href='/contact') Contact
       li.nav-item
-        a.nav-link(title='link' href='#') basic
+        a.nav-link(title='link' href='/basic') basic
       li.nav-item
-        a.nav-link(title='link' href='#') lmao
+        a.nav-link(title='link' href='/lmao') lmao
 // content section
 .container
   .row.g-3
@@ -104,7 +104,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164370117955063671.jpg' alt='Department of posts')
@@ -114,7 +114,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164222946455063671.jpg' alt='Department of posts')
@@ -124,7 +124,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164216006255063671.jpg' alt='Department of posts')
@@ -134,7 +134,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164215613451553221.jpg' alt='Department of posts')
@@ -144,7 +144,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164414460255063671.jpg' alt='Department of posts')
@@ -154,7 +154,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164414473255063671.jpg' alt='Department of posts')
@@ -164,7 +164,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164517693455063671.jpg' alt='Department of posts')
@@ -174,7 +174,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
     .col-12.col-md-6.col-lg-4
       .card
         img.card-img-top(src='images/mygov_164404222355063671.jpg' alt='Department of posts')
@@ -184,7 +184,7 @@ nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-invers
           p.card-text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt magni ea
             | .
-          a.btn.btn-primary(title='link' href='#') Read More..
+          a.btn.btn-primary(title='link' href='/') Read More..
 .btn(style='width: 150px;margin:0 600px;display: flex; align-items: center;justify-content:center important;')
   button.w3-button.w3-grey.w3-round-xxlarge  + More Blogs
 // Footer Section
@@ -194,53 +194,53 @@ footer.bg-primary.text-white.pt-5.pb-4
       .col-md-3.col-lg-3.col-xl-3.mx-auto.mt-3
         h5.text-uppercase.mb-4.font-weight-bold.text-white Activites
         p
-          a.text-white(title='link' href='groups.html' style='text-decoration: none;')  Groups
+          a.text-white(title='link' href='groups.pug' style='text-decoration: none;')  Groups
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Do
+          a.text-white(title='link' href='/do' style='text-decoration: none;')  Do
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Discuss
+          a.text-white(title='link' href='/discuss' style='text-decoration: none;')  Discuss
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Poll &amp; Survey
+          a.text-white(title='link' href='/poll' style='text-decoration: none;')  Poll &amp; Survey
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Blog
+          a.text-white(title='link' href='/blog' style='text-decoration: none;')  Blog
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Talk
+          a.text-white(title='link' href='/talk' style='text-decoration: none;')  Talk
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Campaigns
+          a.text-white(title='link' href='/campaigns' style='text-decoration: none;')  Campaigns
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Podcast
+          a.text-white(title='link' href='/podcast' style='text-decoration: none;')  Podcast
       .col-md-2.col-lg-2.col-xl-2.mx-auto.mt-3
         h5.text-uppercase.mb-4.font-weight-bold.text-white Get To Know
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  About MyGov
+          a.text-white(title='link' href='/aboutmygov' style='text-decoration: none;')  About MyGov
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')
+          a.text-white(title='link' href='/' style='text-decoration: none;')
             | Associate with
             | MyGov
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  MyGov in Media
+          a.text-white(title='link' href='/mygovindmedia' style='text-decoration: none;')  MyGov in Media
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Website Policies
+          a.text-white(title='link' href='/policies' style='text-decoration: none;')  Website Policies
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Link to us
+          a.text-white(title='link' href='/linktous' style='text-decoration: none;')  Link to us
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Work at MyGov
+          a.text-white(title='link' href='/workatmygov' style='text-decoration: none;')  Work at MyGov
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Points &amp; Badges
+          a.text-white(title='link' href='/badges' style='text-decoration: none;')  Points &amp; Badges
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  FAQ
+          a.text-white(title='link' href='/faq' style='text-decoration: none;')  FAQ
       .col-md-3.col-lg-2.col-xl-2.mx-auto.mt-3
         h5.text-uppercase.mb-4.font-weight-bold.text-white Help &amp; Support
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Help
+          a.text-white(title='link' href='/help' style='text-decoration: none;')  Help
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Feedback
+          a.text-white(title='link' href='/feedback' style='text-decoration: none;')  Feedback
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')
+          a.text-white(title='link' href='/termandcondition' style='text-decoration: none;')
             | Terms &amp;
             | Conditions
         p
-          a.text-white(title='link' href='#' style='text-decoration: none;')  Contact
+          a.text-white(title='link' href='/contact' style='text-decoration: none;')  Contact
       .col-md-4.col-lg-3.col-xl-3.mx-auto.mt-3
         h5.text-uppercase.mb-4.font-weight-bold.text-white Contact
         p
@@ -260,25 +260,25 @@ footer.bg-primary.text-white.pt-5.pb-4
       .col-md-7.col-lg-8
         p
           | Copyright &copy;2020 All rights reserved by:
-          a(title='link' href='#' style='text-decoration: none;')
+          a(title='link' href='/mygov' style='text-decoration: none;')
             strong.text-white MyGov
       .col-md-5.col-lg-4
         .text-center.text-md-right
           ul.list-unstyled.list-inline
             li.list-inline-item
-              a.btn-floating.btn-sm.text-white(title='link' href='#' style='font-size: 23px;')
+              a.btn-floating.btn-sm.text-white(title='link' href='/' style='font-size: 23px;')
                 i.fab.fa-facebook
             li.list-inline-item
-              a.btn-floating.btn-sm.text-white(title='link' href='#' style='font-size: 23px;')
+              a.btn-floating.btn-sm.text-white(title='link' href='/' style='font-size: 23px;')
                 i.fab.fa-twitter
             li.list-inline-item
-              a.btn-floating.btn-sm.text-white(title='link' href='#' style='font-size: 23px;')
+              a.btn-floating.btn-sm.text-white(title='link' href='/' style='font-size: 23px;')
                 i.fab.fa-google-plus
             li.list-inline-item
-              a.btn-floating.btn-sm.text-white(title='link' href='#' style='font-size: 23px;')
+              a.btn-floating.btn-sm.text-white(title='link' href='/' style='font-size: 23px;')
                 i.fab.fa-linkedin-in
             li.list-inline-item
-              a.btn-floating.btn-sm.text-white(title='link' href='#' style='font-size: 23px;')
+              a.btn-floating.btn-sm.text-white(title='link' href='/' style='font-size: 23px;')
                 i.fab.fa-youtube
 // JavaScript tags
 script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
