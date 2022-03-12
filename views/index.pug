@@ -18,10 +18,20 @@ head
   link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous')
 // Navbars
 // Navbar 1
+if(success)
+  .alert.alert-success(role='alert')
+    | #{success}
+if(failed)
+  .alert.alert-danger(role='alert')
+    | #{failed}
+if(isLogged)
+  .alert.alert-success(role='alert')
+    | #{isLogged}
+
 nav#navbar1.navbar.py-0.navbar-expand-lg.navbar-light.navbar-custom.navbar-inverse.navbar-fixed-top
   a.navbar-brand(href='/')
     img#india_flag(alt='Government of India' src='images/india_flag.png')
-    |           GOVERNMENT OF INDIA
+    |           GOVERNMENT OF INDIA 
   button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarNav.collapse.navbar-collapse
@@ -48,7 +58,7 @@ nav#navbar1.navbar.py-0.navbar-expand-lg.navbar-light.navbar-custom.navbar-inver
       li.nav-item
         a.nav-link.login(href='/login') Login
       li.nav-item
-        a.nav-link.register(href='/register') Register
+        a.nav-link.register(href='/myGovRegister') Register
 // Navbar 2
 nav#navbar2.navbar.navbar-expand-lg.navbar-light.navbar-two-custom.navbar-inverse.navbar-fixed-top
   a.navbar-brand(href='/')
@@ -187,7 +197,7 @@ footer.bg-primary.text-white.pt-5.pb-4
   .container.text-center.text-md-left
     .row.text-center.text-md-left
       .col-md-3.col-lg-3.col-xl-3.mx-auto.mt-3
-        h5.text-uppercase.mb-4.font-weight-bold.text-white Activites
+        h5.text-uppercase.mb-4.font-weight-bold.text-white Activities
         p
           a.text-white(href='/groups' style='text-decoration: none;')  Groups
         p

@@ -1,0 +1,7 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b54ef653-075f-49d5-b2e2-44a2442155f5/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/ysdf",
+    "appService.deploySubpath": ".",
+    "cSpell.words": [
+        "lmao"
+    ]
+}

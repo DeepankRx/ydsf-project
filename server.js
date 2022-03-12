@@ -101,9 +101,9 @@ app.post('/login', (req, res) => {
         password: req.body.password
     }).then(response => {
         console.log(response.data);
-        res.render('blog');
+        res.render('index',{isLogged: "Logged In"});
     }).catch(err => {
-        console.log(err);
+        res.render('index', {isLoggedFailed: "Failed to Login"});
     });
 })
 app.post('/myGovRegister', (req, res) => {
@@ -116,9 +116,13 @@ app.post('/myGovRegister', (req, res) => {
         phone : req.body.phone,
         gender : req.body.gender,
     }).then(response => {
-        console.log(response.data);
+        res.render('index', {
+            success : "Registration successful"
+        });
     }).catch(err => {
-        console.log(err);
+        res.render('index', {
+            failed : "Registration failed . Email or Phone number already exists"
+        });
     });
 })
 app.listen(port, () => {
